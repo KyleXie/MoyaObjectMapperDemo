@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		275A2EAE1C8D88510057EFE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EAD1C8D88510057EFE4 /* AppDelegate.swift */; };
+		275A2EB01C8D88510057EFE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EAF1C8D88510057EFE4 /* ViewController.swift */; };
+		275A2EB31C8D88510057EFE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275A2EB11C8D88510057EFE4 /* Main.storyboard */; };
+		275A2EB51C8D88510057EFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275A2EB41C8D88510057EFE4 /* Assets.xcassets */; };
+		275A2EB81C8D88510057EFE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275A2EB61C8D88510057EFE4 /* LaunchScreen.storyboard */; };
+		275A2EC31C8D88510057EFE4 /* MoyaObjectMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EC21C8D88510057EFE4 /* MoyaObjectMapperTests.swift */; };
+		275A2ECE1C8D88510057EFE4 /* MoyaObjectMapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2ECD1C8D88510057EFE4 /* MoyaObjectMapperUITests.swift */; };
+		275A2EDE1C8D8ABF0057EFE4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EDB1C8D8ABF0057EFE4 /* Models.swift */; };
+		275A2EDF1C8D8ABF0057EFE4 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EDC1C8D8ABF0057EFE4 /* Network.swift */; };
+		275A2EE01C8D8ABF0057EFE4 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275A2EDD1C8D8ABF0057EFE4 /* GitHubAPI.swift */; };
+		E1049BEFCA3C69233EAAE404 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8224479CC7A9BEF263B3FD /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		275A2EBF1C8D88510057EFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 275A2EA21C8D88510057EFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275A2EA91C8D88510057EFE4;
+			remoteInfo = MoyaObjectMapper;
+		};
+		275A2ECA1C8D88510057EFE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 275A2EA21C8D88510057EFE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275A2EA91C8D88510057EFE4;
+			remoteInfo = MoyaObjectMapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275A2EAA1C8D88510057EFE4 /* MoyaObjectMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoyaObjectMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275A2EAD1C8D88510057EFE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		275A2EAF1C8D88510057EFE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		275A2EB21C8D88510057EFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275A2EB41C8D88510057EFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275A2EB71C8D88510057EFE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		275A2EB91C8D88510057EFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275A2EBE1C8D88510057EFE4 /* MoyaObjectMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaObjectMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275A2EC21C8D88510057EFE4 /* MoyaObjectMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaObjectMapperTests.swift; sourceTree = "<group>"; };
+		275A2EC41C8D88510057EFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275A2EC91C8D88510057EFE4 /* MoyaObjectMapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoyaObjectMapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275A2ECD1C8D88510057EFE4 /* MoyaObjectMapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaObjectMapperUITests.swift; sourceTree = "<group>"; };
+		275A2ECF1C8D88510057EFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275A2EDB1C8D8ABF0057EFE4 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		275A2EDC1C8D8ABF0057EFE4 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		275A2EDD1C8D8ABF0057EFE4 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		9D8224479CC7A9BEF263B3FD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C549DE459732D67DC9D97875 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F533A2DF392DC2F28D24DAA4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275A2EA71C8D88510057EFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1049BEFCA3C69233EAAE404 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EBB1C8D88510057EFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EC61C8D88510057EFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		208B6EC091112ADDABE79B73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D8224479CC7A9BEF263B3FD /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		275A2EA11C8D88510057EFE4 = {
+			isa = PBXGroup;
+			children = (
+				275A2EAC1C8D88510057EFE4 /* MoyaObjectMapper */,
+				275A2EC11C8D88510057EFE4 /* MoyaObjectMapperTests */,
+				275A2ECC1C8D88510057EFE4 /* MoyaObjectMapperUITests */,
+				275A2EAB1C8D88510057EFE4 /* Products */,
+				BBDE6BA8D5203704DDDB7A15 /* Pods */,
+				208B6EC091112ADDABE79B73 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		275A2EAB1C8D88510057EFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275A2EAA1C8D88510057EFE4 /* MoyaObjectMapper.app */,
+				275A2EBE1C8D88510057EFE4 /* MoyaObjectMapperTests.xctest */,
+				275A2EC91C8D88510057EFE4 /* MoyaObjectMapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		275A2EAC1C8D88510057EFE4 /* MoyaObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				275A2EDB1C8D8ABF0057EFE4 /* Models.swift */,
+				275A2EDC1C8D8ABF0057EFE4 /* Network.swift */,
+				275A2EDD1C8D8ABF0057EFE4 /* GitHubAPI.swift */,
+				275A2EAD1C8D88510057EFE4 /* AppDelegate.swift */,
+				275A2EAF1C8D88510057EFE4 /* ViewController.swift */,
+				275A2EB11C8D88510057EFE4 /* Main.storyboard */,
+				275A2EB41C8D88510057EFE4 /* Assets.xcassets */,
+				275A2EB61C8D88510057EFE4 /* LaunchScreen.storyboard */,
+				275A2EB91C8D88510057EFE4 /* Info.plist */,
+			);
+			path = MoyaObjectMapper;
+			sourceTree = "<group>";
+		};
+		275A2EC11C8D88510057EFE4 /* MoyaObjectMapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				275A2EC21C8D88510057EFE4 /* MoyaObjectMapperTests.swift */,
+				275A2EC41C8D88510057EFE4 /* Info.plist */,
+			);
+			path = MoyaObjectMapperTests;
+			sourceTree = "<group>";
+		};
+		275A2ECC1C8D88510057EFE4 /* MoyaObjectMapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				275A2ECD1C8D88510057EFE4 /* MoyaObjectMapperUITests.swift */,
+				275A2ECF1C8D88510057EFE4 /* Info.plist */,
+			);
+			path = MoyaObjectMapperUITests;
+			sourceTree = "<group>";
+		};
+		BBDE6BA8D5203704DDDB7A15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F533A2DF392DC2F28D24DAA4 /* Pods.debug.xcconfig */,
+				C549DE459732D67DC9D97875 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275A2EA91C8D88510057EFE4 /* MoyaObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275A2ED21C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapper" */;
+			buildPhases = (
+				C46F87AE2C2FB3329BCFF02B /* Check Pods Manifest.lock */,
+				275A2EA61C8D88510057EFE4 /* Sources */,
+				275A2EA71C8D88510057EFE4 /* Frameworks */,
+				275A2EA81C8D88510057EFE4 /* Resources */,
+				0FC2907A9BC664F0F9429388 /* Embed Pods Frameworks */,
+				F55E6720BFB7A88A931493F4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoyaObjectMapper;
+			productName = MoyaObjectMapper;
+			productReference = 275A2EAA1C8D88510057EFE4 /* MoyaObjectMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275A2EBD1C8D88510057EFE4 /* MoyaObjectMapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275A2ED51C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapperTests" */;
+			buildPhases = (
+				275A2EBA1C8D88510057EFE4 /* Sources */,
+				275A2EBB1C8D88510057EFE4 /* Frameworks */,
+				275A2EBC1C8D88510057EFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275A2EC01C8D88510057EFE4 /* PBXTargetDependency */,
+			);
+			name = MoyaObjectMapperTests;
+			productName = MoyaObjectMapperTests;
+			productReference = 275A2EBE1C8D88510057EFE4 /* MoyaObjectMapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		275A2EC81C8D88510057EFE4 /* MoyaObjectMapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275A2ED81C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapperUITests" */;
+			buildPhases = (
+				275A2EC51C8D88510057EFE4 /* Sources */,
+				275A2EC61C8D88510057EFE4 /* Frameworks */,
+				275A2EC71C8D88510057EFE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275A2ECB1C8D88510057EFE4 /* PBXTargetDependency */,
+			);
+			name = MoyaObjectMapperUITests;
+			productName = MoyaObjectMapperUITests;
+			productReference = 275A2EC91C8D88510057EFE4 /* MoyaObjectMapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		275A2EA21C8D88510057EFE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "DecentFox Studio";
+				TargetAttributes = {
+					275A2EA91C8D88510057EFE4 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					275A2EBD1C8D88510057EFE4 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 275A2EA91C8D88510057EFE4;
+					};
+					275A2EC81C8D88510057EFE4 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 275A2EA91C8D88510057EFE4;
+					};
+				};
+			};
+			buildConfigurationList = 275A2EA51C8D88510057EFE4 /* Build configuration list for PBXProject "MoyaObjectMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 275A2EA11C8D88510057EFE4;
+			productRefGroup = 275A2EAB1C8D88510057EFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275A2EA91C8D88510057EFE4 /* MoyaObjectMapper */,
+				275A2EBD1C8D88510057EFE4 /* MoyaObjectMapperTests */,
+				275A2EC81C8D88510057EFE4 /* MoyaObjectMapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275A2EA81C8D88510057EFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275A2EB81C8D88510057EFE4 /* LaunchScreen.storyboard in Resources */,
+				275A2EB51C8D88510057EFE4 /* Assets.xcassets in Resources */,
+				275A2EB31C8D88510057EFE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EBC1C8D88510057EFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EC71C8D88510057EFE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FC2907A9BC664F0F9429388 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46F87AE2C2FB3329BCFF02B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F55E6720BFB7A88A931493F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275A2EA61C8D88510057EFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275A2EDE1C8D8ABF0057EFE4 /* Models.swift in Sources */,
+				275A2EB01C8D88510057EFE4 /* ViewController.swift in Sources */,
+				275A2EDF1C8D8ABF0057EFE4 /* Network.swift in Sources */,
+				275A2EE01C8D8ABF0057EFE4 /* GitHubAPI.swift in Sources */,
+				275A2EAE1C8D88510057EFE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EBA1C8D88510057EFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275A2EC31C8D88510057EFE4 /* MoyaObjectMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275A2EC51C8D88510057EFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275A2ECE1C8D88510057EFE4 /* MoyaObjectMapperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		275A2EC01C8D88510057EFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275A2EA91C8D88510057EFE4 /* MoyaObjectMapper */;
+			targetProxy = 275A2EBF1C8D88510057EFE4 /* PBXContainerItemProxy */;
+		};
+		275A2ECB1C8D88510057EFE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275A2EA91C8D88510057EFE4 /* MoyaObjectMapper */;
+			targetProxy = 275A2ECA1C8D88510057EFE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		275A2EB11C8D88510057EFE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275A2EB21C8D88510057EFE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275A2EB61C8D88510057EFE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275A2EB71C8D88510057EFE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		275A2ED01C8D88510057EFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		275A2ED11C8D88510057EFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		275A2ED31C8D88510057EFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F533A2DF392DC2F28D24DAA4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoyaObjectMapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		275A2ED41C8D88510057EFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C549DE459732D67DC9D97875 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoyaObjectMapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		275A2ED61C8D88510057EFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoyaObjectMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoyaObjectMapper.app/MoyaObjectMapper";
+			};
+			name = Debug;
+		};
+		275A2ED71C8D88510057EFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MoyaObjectMapperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoyaObjectMapper.app/MoyaObjectMapper";
+			};
+			name = Release;
+		};
+		275A2ED91C8D88510057EFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MoyaObjectMapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoyaObjectMapper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		275A2EDA1C8D88510057EFE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MoyaObjectMapperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.decentfox.MoyaObjectMapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoyaObjectMapper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275A2EA51C8D88510057EFE4 /* Build configuration list for PBXProject "MoyaObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275A2ED01C8D88510057EFE4 /* Debug */,
+				275A2ED11C8D88510057EFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275A2ED21C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275A2ED31C8D88510057EFE4 /* Debug */,
+				275A2ED41C8D88510057EFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275A2ED51C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275A2ED61C8D88510057EFE4 /* Debug */,
+				275A2ED71C8D88510057EFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275A2ED81C8D88510057EFE4 /* Build configuration list for PBXNativeTarget "MoyaObjectMapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275A2ED91C8D88510057EFE4 /* Debug */,
+				275A2EDA1C8D88510057EFE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 275A2EA21C8D88510057EFE4 /* Project object */;
+}

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MoyaObjectMapperDemo/MoyaObjectMapperDemo.xcodeproj">
+      location = "group:MoyaObjectMapper.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
