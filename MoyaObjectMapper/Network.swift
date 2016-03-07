@@ -9,27 +9,40 @@
 import Foundation
 import Moya
 import ObjectMapper
+import ReactiveCocoa
 
-class Network<T: TargetType> {
-    private let provider: ReactiveCocoaMoyaProvider<T>
+private func unwrapThrowable<T>(throwable: () throws -> T) -> SignalProducer<T, Moya.Error> {
+    do {
+        return SignalProducer(value: try throwable())
+    } catch {
+        return SignalProducer(error: error as! Moya.Error)
+    }
+}
 
-    required init(isTesting: Bool = false) {
-        if isTesting {
-            let endpointColosure = { (target: T) -> Endpoint<T> in
-                let url = target.baseURL.URLByAppendingPathComponent(target.path).absoluteString
-                return Endpoint(
-                    URL: url,
-                    sampleResponseClosure: { .NetworkResponse(200, target.sampleData) },
-                    method: target.method,
-                    parameters: target.parameters)
-            }
-            provider = ReactiveCocoaMoyaProvider<T>(endpointClosure: endpointColosure)
-        } else {
-            provider = ReactiveCocoaMoyaProvider<T>()
+
+extension SignalProducerType where Value == Moya.Response, Error == Moya.Error {
+    public func mapObject<T: Mappable>(type: T.Type) -> SignalProducer<T, Error> {
+        return producer.flatMap(.Latest) { response -> SignalProducer<T, Error> in
+            return unwrapThrowable { try response.mapObject() }
         }
     }
 
-//    static func request<R: BaseModel>(type: T, params: [String: AnyObject]?=nil) -> SignalProducer<R, Error> {
-//    }
+    public func mapArray<T: Mappable>(type: T.Type) -> SignalProducer<[T], Error> {
+        return producer.flatMap(.Latest) { response -> SignalProducer<[T], Error> in
+            return unwrapThrowable { try response.mapArray() }
+        }
+    }
 
 }
+
+class Network<T: TargetType> {
+    let provider: ReactiveCocoaMoyaProvider<T>
+    let testProvider: ReactiveCocoaMoyaProvider<T>
+
+    required init() {
+        provider = ReactiveCocoaMoyaProvider<T>()
+        testProvider = ReactiveCocoaMoyaProvider<T>(stubClosure: ReactiveCocoaMoyaProvider.ImmediatelyStub)
+    }
+}
+
+let github = Network<GitHub>()

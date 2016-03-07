@@ -56,7 +56,7 @@ extension GitHub: TargetType {
     var sampleData: NSData {
         switch self {
         case .Zen:
-            return toJsonData(["success": true, "message": "ok"])!
+            return toJsonData(["success": true, "message": "not ok"])!
         case .UserProfile(let name):
             return toJsonData(
                 ["success": true,
