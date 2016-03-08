@@ -36,12 +36,30 @@ extension SignalProducerType where Value == Moya.Response, Error == Moya.Error {
 }
 
 class Network<T: TargetType> {
-    let provider: ReactiveCocoaMoyaProvider<T>
-    let testProvider: ReactiveCocoaMoyaProvider<T>
+    private let realProvider: ReactiveCocoaMoyaProvider<T>
+    #if DEBUG
+    private let testProvider: ReactiveCocoaMoyaProvider<T>
+    #endif
+
+
+    #if DEBUG
+    var isTesting = true
+    #endif
+
+    var provider: ReactiveCocoaMoyaProvider<T> {
+        #if DEBUG
+        return isTesting ? testProvider : realProvider
+        #else
+        return realProvider
+        #endif
+
+    }
 
     required init() {
-        provider = ReactiveCocoaMoyaProvider<T>()
+        realProvider = ReactiveCocoaMoyaProvider<T>()
+        #if DEBUG
         testProvider = ReactiveCocoaMoyaProvider<T>(stubClosure: ReactiveCocoaMoyaProvider.ImmediatelyStub)
+        #endif
     }
 }
 

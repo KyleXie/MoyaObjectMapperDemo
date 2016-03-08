@@ -15,7 +15,7 @@ class ViewModel {
     let users = MutableProperty<[User]>([User]())
 
     func getUser(name: String) -> SignalProducer<User, Moya.Error> {
-        return github.testProvider
+        return github.provider
             .request(.UserProfile(name))
             .mapObject(User.self)
             .on { next in
@@ -24,7 +24,7 @@ class ViewModel {
     }
 
     func getUsers(count: Int) -> SignalProducer<[User], Moya.Error> {
-        return github.testProvider
+        return github.provider
             .request(.UserList(count))
             .mapArray(User.self)
             .on(next: { next in
